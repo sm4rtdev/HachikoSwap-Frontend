@@ -11,11 +11,16 @@
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "@rainbow-me/rainbowkit": "^2.2.2",
+    "axios": "^1.7.9",
     "chart.js": "^4.4.7",
     "next": "15.1.4",
+    "pino-pretty": "^13.0.0",
     "react": "^19.0.0",
     "react-chartjs-2": "^5.3.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "viem": "^2.22.11",
+    "wagmi": "^2.14.8"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

@@ -20,8 +20,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.header-nav-item
-{
+.header-nav-item {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 15px;
@@ -32,15 +31,13 @@ body {
   line-height: 18.06px;
   color: #332038;
 }
-.header-nav-item.active
-{
+.header-nav-item.active {
   background-color: #684222 !important;
   color: white !important;
   font-weight: 500 !important;
 }
 
-.dark .header-nav-item-dark
-{
+.dark .header-nav-item-dark {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 15px;
@@ -49,12 +46,11 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 18.06px;
-  color: #FEE8E9;
+  color: #fee8e9;
 }
-.dark .header-nav-item-dark.active
-{
-  background-color: #FF7D82 !important;
-  color: #4A1F27 !important;
+.dark .header-nav-item-dark.active {
+  background-color: #ff7d82 !important;
+  color: #4a1f27 !important;
   font-weight: 500 !important;
 }
 .custom-border {
@@ -64,27 +60,26 @@ body {
   border-image: linear-gradient(to bottom, white, transparent) 2; /* Gradient from white to transparent */
   border-radius: 20px; /* Custom radius */
 }
-.liquidity_manage_active
-{
-  background-color: #FF7D82 !important;
+.liquidity_manage_active {
+  background-color: #ff7d82 !important;
   color: white !important;
   opacity: 100%;
 }
-.dark .liquidity_manage_active
-{
-  background-color: #C37623 !important;
-  color: white !important;
-  opacity: 100%;
-}
-
-.lock_manage_active
-{
-  background-image: linear-gradient(180deg, #FF7D82 0%, #FFC1C4 100%) !important;
+.dark .liquidity_manage_active {
+  background-color: #c37623 !important;
   color: white !important;
   opacity: 100%;
 }
 
-
+.lock_manage_active {
+  background-image: linear-gradient(
+    180deg,
+    #ff7d82 0%,
+    #ffc1c4 100%
+  ) !important;
+  color: white !important;
+  opacity: 100%;
+}
 
 input[type="range"] {
   -webkit-appearance: none; /* Override default CSS styles */
@@ -96,7 +91,7 @@ input[type="range"]::-webkit-slider-thumb {
   appearance: none;
   width: 10px; /* Width of the thumb */
   height: 10px; /* Height of the thumb */
-  background: #FF7D82; /* Customize thumb color */
+  background: #ff7d82; /* Customize thumb color */
   border-radius: 50%; /* Make the thumb circular */
   cursor: pointer; /* Pointer cursor on hover */
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); /* Optional shadow */
@@ -105,7 +100,7 @@ input[type="range"]::-webkit-slider-thumb {
 input[type="range"]::-moz-range-thumb {
   width: 10px; /* Width of the thumb */
   height: 10px; /* Height of the thumb */
-  background: #4A90E2; /* Customize thumb color */
+  background: #4a90e2; /* Customize thumb color */
   border-radius: 50%; /* Make the thumb circular */
   cursor: pointer; /* Pointer cursor on hover */
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); /* Optional shadow */
@@ -114,12 +109,11 @@ input[type="range"]::-moz-range-thumb {
 input[type="range"]::-ms-thumb {
   width: 10px; /* Width of the thumb */
   height: 10px; /* Height of the thumb */
-  background: #4A90E2; /* Customize thumb color */
+  background: #4a90e2; /* Customize thumb color */
   border-radius: 50%; /* Make the thumb circular */
   cursor: pointer; /* Pointer cursor on hover */
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); /* Optional shadow */
 }
-
 
 @layer components {
   /* Custom scrollbar styles */
@@ -134,18 +128,24 @@ input[type="range"]::-ms-thumb {
   }
 
   .scrollbar::-webkit-scrollbar-track {
-    background: rgb(0,0,0,0 green, blue); /* Track color */
-    border-top-right-radius: 15px !important
+    background: rgb(0, 0, 0, 0 green, blue); /* Track color */
+    border-top-right-radius: 15px !important;
   }
 
   .scrollbar::-webkit-scrollbar-thumb {
-    background-color: #FF4465 !important; /* Thumb color */
+    background-color: #ff4465 !important; /* Thumb color */
     border-radius: 10px !important; /* Rounded corners */
     /* -moz-border-radius: 5px !important;
     -webkit-border-radius: 5px !important; */
   }
 
   .scrollbar::-webkit-scrollbar-thumb:hover {
-    background-color: #2B6CB0; /* Thumb color on hover */
+    background-color: #2b6cb0; /* Thumb color on hover */
   }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
